@@ -1,0 +1,15 @@
+[user]
+    name = Pier-Olivier Thibault
+    email = 23230+pier-oliviert@users.noreply.github.com
+[diff]
+[color]
+    ui = auto
+[alias]
+    s = status
+    d = diff
+    c = commit
+    amend = commit --amend
+
+[merge]
+    tool = vimdiff
+

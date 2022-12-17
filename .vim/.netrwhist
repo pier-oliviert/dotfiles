@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/pier-olivier/Develop/spacedust/backend/development/app/views/development/home'
+let g:netrw_dirhist_1='/Users/pier-olivier/Develop/spacedust/backend/development/app/views/development'
+let g:netrw_dirhist_0='/Users/pier-olivier/Develop/spacedust/backend/development/app/views'
+let g:netrw_dirhist_9='/Users/pier-olivier/Develop/spacedust/backend/development/app'
+let g:netrw_dirhist_8='/Users/pier-olivier/Develop/spacedust/backend/development/app/controllers'
+let g:netrw_dirhist_7='/Users/pier-olivier/Develop/spacedust/backend/development/app/controllers/development'
+let g:netrw_dirhist_6='/Users/pier-olivier/Develop/spacedust/backend/development/app/controllers'
+let g:netrw_dirhist_5='/Users/pier-olivier/Develop/spacedust/backend/development/app'
+let g:netrw_dirhist_4='/Users/pier-olivier/Develop/spacedust/backend/development/app/models'
+let g:netrw_dirhist_3='/Users/pier-olivier/Develop/spacedust/backend/development/app/models/development'
