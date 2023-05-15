@@ -1,0 +1,13 @@
+[user]
+  name = Pier-Olivier Thibault
+	email = 23230+pier-oliviert@users.noreply.github.com
+[diff]
+[color]
+    ui = auto
+[alias]
+[merge]
+    tool = vimdiff
+
+[commit]
+[push]
+	autoSetupRemote = true
