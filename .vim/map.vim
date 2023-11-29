@@ -1,11 +1,12 @@
 " Core
 nnoremap <esc> :nohlsearch<cr>
 
-" Window moving
+" Window Management
 nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+nnoremap <c-=> <c-w>=
 
 " Telescope
 map <leader>ff :Telescope find_files<cr>
