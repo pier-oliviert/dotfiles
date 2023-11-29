@@ -1,3 +1,6 @@
+" Core
+nnoremap <esc> :nohlsearch<cr>
+
 " Window moving
 nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
