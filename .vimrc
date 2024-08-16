@@ -5,6 +5,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 source $HOME/.vim/plugs.vim
-source $HOME/.vim/functions.vim
+source $HOME/.vim/init.lua
 source $HOME/.vim/settings.vim
 source $HOME/.vim/map.vim

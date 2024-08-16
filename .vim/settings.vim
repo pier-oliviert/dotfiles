@@ -25,7 +25,7 @@ set nowritebackup
 
 " Netrw
 let g:netrw_banner=0
-let g:netrw_liststyle=3
+let g:netrw_liststyle=0
 
 " Searching
 set history=10000
@@ -62,6 +62,5 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_operators = 1
-
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = "goimports"
