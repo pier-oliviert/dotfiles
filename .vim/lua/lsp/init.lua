@@ -68,10 +68,16 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').default_capabilities() --nvim-cmp
 
 local on_attach = function(client, bufnr)
-  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
   local opts = { noremap = true, silent = true }
-  vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+  vim.keymap.set(
+    "n",
+    "K",
+    function()
+      vim.lsp.buf.definition()
+    end,
+    opts
+  )
 
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
