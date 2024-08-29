@@ -71,8 +71,7 @@ local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
   local opts = { noremap = true, silent = true }
-  vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-  vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+  vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
@@ -84,7 +83,7 @@ local nvim_lsp = require('lspconfig')
 -- GoLang
 nvim_lsp['gopls'].setup{
   cmd = {'gopls'},
-  -- on_attach = on_attach,
+  on_attach = on_attach,
   capabilities = capabilities,
   settings = {
     gopls = {
