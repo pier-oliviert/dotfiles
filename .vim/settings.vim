@@ -57,6 +57,7 @@ let g:ctrlp_use_caching = 0
 let g:gitgutter_realtime = 1
 
 " Go related settings
+let g:go_doc_popup_window = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
