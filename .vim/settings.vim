@@ -22,6 +22,7 @@ set updatetime=100
 set clipboard=unnamed
 set nobackup
 set nowritebackup
+set noswapfile
 
 " Netrw
 let g:netrw_banner=0
@@ -65,3 +66,5 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_operators = 1
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = "goimports"
+let g:go_def_mapping_enabled = 0 " Disabling default mapping
+let g:go_textobj_enabled = 0 " Disabling default mapping

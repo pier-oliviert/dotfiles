@@ -70,14 +70,9 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities() --nvim-cmp
 local on_attach = function(client, bufnr)
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
   local opts = { noremap = true, silent = true }
-  vim.keymap.set(
-    "n",
-    "K",
-    function()
-      vim.lsp.buf.definition()
-    end,
-    opts
-  )
+
+  vim.keymap.set("n", "<C-t>", "<cmd>GoTest<cr>", opts)
+  vim.keymap.set("n", "gd", "<cmd>GoDef<cr>", opts)
 
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
@@ -105,5 +100,3 @@ nvim_lsp['gopls'].setup{
     usePlaceholders = true,
   }
 }
-
-
