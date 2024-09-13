@@ -1,5 +1,5 @@
 " Core
-nnoremap <esc> :nohlsearch<cr>
+nnoremap <esc> <silent>:nohlsearch<cr>
 
 " Window Management
 nnoremap <c-l> <c-w>l
