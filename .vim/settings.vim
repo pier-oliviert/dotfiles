@@ -26,7 +26,7 @@ set noswapfile
 
 " Netrw
 let g:netrw_banner=0
-let g:netrw_liststyle=0
+let g:netrw_liststyle=3
 
 " Searching
 set history=10000
