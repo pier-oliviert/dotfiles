@@ -1,5 +1,5 @@
 " Core
-nnoremap <esc> <silent>:nohlsearch<cr>
+nnoremap <silent><esc> :nohlsearch<cr>
 
 " Window Management
 nnoremap <c-l> <c-w>l
@@ -15,4 +15,4 @@ nnoremap <leader>b <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>h <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 " Github
-map <leader>gb :Git blame<cr>
+map gb :Git blame<cr>
