@@ -45,3 +45,10 @@ export PATH="/usr/local/bin:$PATH"
 if [ -f ~/.zshrc.usr ]; then
   source ~/.zshrc.usr
 fi
+
+# bun completions
+[ -s "/Users/pier-olivier/.bun/_bun" ] && source "/Users/pier-olivier/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
