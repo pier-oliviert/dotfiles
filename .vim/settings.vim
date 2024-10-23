@@ -1,5 +1,5 @@
 " Themes
-colorscheme tokyonight
+colorscheme catppuccin-mocha
 
 " Text stuff
 syntax on
@@ -17,7 +17,6 @@ set cursorline
 set encoding=utf-8
 set fileencoding=utf-8
 set backspace=indent,eol,start
-let mapleader=","
 set updatetime=100
 set clipboard=unnamed
 set nobackup

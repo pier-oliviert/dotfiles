@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/pier-olivier'
+let g:netrw_dirhist_2='/Users/pier-olivier/.zsh'
+let g:netrw_dirhist_1='/Users/pier-olivier/go/pkg/mod/github.com/cert-manager/cert-manager@v1.15.1/pkg/acme/webhook/openapi'
