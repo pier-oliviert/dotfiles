@@ -1,5 +1,11 @@
-vim.opt.termguicolors = true
-vim.g.mapleader='\\'
+require("config.lazy")
+require("config.settings")
+require("config.mappings")
+
+vim.api.nvim_cmd({
+  cmd = 'colorscheme',
+  args = {'catppuccin-mocha'}
+}, {})
 
 require('lualine').setup()
 require("noice").setup({
@@ -88,4 +94,5 @@ require "breakpoints"
 -- Want to load languages at the end since those languages might require
 -- something that needs to be loaded first.
 require "langs/go"
+
 

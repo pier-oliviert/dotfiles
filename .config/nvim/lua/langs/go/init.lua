@@ -48,4 +48,4 @@ end
 
 local opts = { noremap = true, silent = true }
 
-vim.keymap.set("n", "<leader>D", debug_tab, opts)
+vim.keymap.set("n", "<leader>td", debug_tab, opts)
