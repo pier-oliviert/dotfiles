@@ -14,5 +14,5 @@ if type -q nvim
 end
 
 function fish_greeting
-    echo "What's cooking?"
+    neofetch
 end
