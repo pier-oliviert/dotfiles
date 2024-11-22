@@ -4,4 +4,4 @@
 
 local map = vim.keymap.set
 
-map("n", "o", "<cmd>Neotree focus<cr>", { desc = "NeoTree focus" })
+map("n", "no", "<cmd>Neotree focus<cr>", { desc = "NeoTree focus" })
