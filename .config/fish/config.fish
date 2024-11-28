@@ -21,13 +21,6 @@ if type -q nvim
     alias vim="nvim"
 end
 
-if type -q python3
-    alias p python3
-end
-
 function fish_greeting
     neofetch
 end
-
-# Created by `pipx` on 2024-11-28 12:58:49
-set PATH $PATH /Users/pier-olivier/.local/bin
