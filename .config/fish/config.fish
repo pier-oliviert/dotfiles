@@ -21,6 +21,10 @@ if type -q nvim
     alias vim="nvim"
 end
 
+if type -q python3
+    alias p python3
+end
+
 function fish_greeting
     neofetch
 end
