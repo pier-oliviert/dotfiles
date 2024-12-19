@@ -22,5 +22,5 @@ if type -q nvim
 end
 
 function fish_greeting
-    neofetch
+    fastfetch
 end
