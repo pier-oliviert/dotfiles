@@ -1,0 +1,8 @@
+autologin.saved_credentials="{\"pothibo\":[\"pothibo\",\"lcQ6iZw4VooLYb+FJwhd7VwuxycgQ+3XbdyyE+D6KejFfBDEMFMt+QI9kU+FG3DW9GGViQP5H0hvmFEJT5gWV+ZBh3tfnlUMFJQnlF+cTwsAMEXHNpGa8ypDpwqwL+VGQv0JA7FDiNA1Hh7vx2071a7ny6ZU2YCHx0kNuEzVLNnINUAaZ+tAQHaaVAwEEc6hBJXTIn/udrgCS0wzGIZ4uCd5AEqJ2IT8F2lGjU9ATkgxy8FrJ8GnPESLj5U+WHKn\"]}"
+autologin.blob="lcQ6iZw4VooLYb+FJwhd7VwuxycgQ+3XbdyyE+D6KejFfBDEMFMt+QI9kU+FG3DW9GGViQP5H0hvmFEJT5gWV+ZBh3tfnlUMFJQnlF+cTwsAMEXHNpGa8ypDpwqwL+VGQv0JA7FDiNA1Hh7vx2071a7ny6ZU2YCHx0kNuEzVLNnINUAaZ+tAQHaaVAwEEc6hBJXTIn/udrgCS0wzGIZ4uCd5AEqJ2IT8F2lGjU9ATkgxy8FrJ8GnPESLj5U+WHKn"
+es.send-on-startup=true
+core.clock_delta=0
+autologin.username="pothibo"
+storage.last-location="/home/pier-olivier/.cache/spotify/Storage"
+autologin.canonical_username="pothibo"
+app.last-launched-version="1.2.48.405.gf2c48e6f"
