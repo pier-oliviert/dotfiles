@@ -28,10 +28,12 @@ in
     pkgs.spotify
     pkgs.rofi
     pkgs.neovim
-    pkgs.asdf
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
+    pkgs.playerctl
+    pkgs.gcc
+    pkgs.zig
+    pkgs._1password-cli
+    pkgs._1password-gui
+    pkgs.vscode
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -109,27 +111,32 @@ in
   programs.waybar = {
     enable = true;
     systemd.enable = true;
+    style = builtins.readFile ./waybar.css;
     settings = [{
-     modules-center = [ "hyprland/workspaces" ];
-     modules-right = [ "pulseaudio" "network" ];
-     pulseaudio = {
-	     format = "{volume}% {icon}";
-	     format-bluetooth = "{volume}% {icon}";
-	     format-bluetooth-muted = " {icon}";
-	     format-icons = {
-		     car = "";
-		     default = [ "" "" "" ];
-		     handsfree = "";
-		     headphones = "";
-		     headset = "";
-		     phone = "";
-		     portable = "";
-	     };
-	     format-muted = " {format_source}";
-	     format-source-muted = "";
-	     on-click = "pavucontrol";
-     };
-     network = {
+      height = 35;
+      spacing = 4;
+      margin-top = 5;
+      margin-bottom = 10;
+      modules-center = [ "hyprland/workspaces" ];
+      modules-right = [ "pulseaudio" "network" ];
+      pulseaudio = {
+        format = "{volume}% {icon}";
+        format-bluetooth = "{volume}% {icon}";
+        format-bluetooth-muted = " {icon}";
+        format-icons = {
+          car = "";
+          default = [ "" "" "" ];
+          handsfree = "";
+          headphones = "";
+          headset = "";
+          phone = "";
+          portable = "";
+        };
+        format-muted = " {format_source}";
+        format-source-muted = "";
+        on-click = "pavucontrol";
+      };
+      network = {
         interval = 1;
         format-alt = "{essid}: {ipaddr}/{cidr}({ifname})";
         format-disconnected = "Disconnected ⚠";
@@ -138,12 +145,5 @@ in
         format-wifi = "{signalStrength}% ";
       };
     }];
-  };
-
-  wayland.windowManager.hyprland.settings = {
-    "$mod" = "SUPER";
-    bind = [
-      "$mod, space, exec, rofi -show window"
-    ];
   };
 }
