@@ -117,8 +117,9 @@ in
       spacing = 4;
       margin-top = 5;
       margin-bottom = 10;
+      modules-left = [ "clock" ];
       modules-center = [ "hyprland/workspaces" ];
-      modules-right = [ "pulseaudio" "network" ];
+      modules-right = ["pulseaudio" "network"];
       pulseaudio = {
         format = "{volume}% {icon}";
         format-bluetooth = "{volume}% {icon}";
